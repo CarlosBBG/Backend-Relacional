@@ -12,6 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 const allRestauranteRoutes = require('./routes/restaurante.route');
 allRestauranteRoutes(app);
 
+const AllMenuRoutes = require('./routes/menu.routes');
+AllMenuRoutes(app);
+
 app.listen(port, () => {
     console.log("Server listening at port", port);
 });
